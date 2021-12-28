@@ -83,7 +83,8 @@
             <div class="manual-nav">
                 <div class="nav-item active"><i class="fa fa-bars" aria-hidden="true"></i> 文档</div>
                 <div class="nav-plus pull-right" data-toggle="tooltip" data-title="返回" data-direction="right">
-                    <a style="color: #999999;" href="{{urlfor "BookController.Dashboard" ":key" .Model.Identify}}" target="_blank"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                    <!--a style="color: #999999;" href="{{urlfor "BookController.Dashboard" ":key" .Model.Identify}}" target="_blank"><i class="fa fa-chevron-left" aria-hidden="true"></i></a-->
+                    <a style="color: #999999;" href="{{urlfor "DocumentController.Index" ":key" .Model.Identify}}"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
                 </div>
                 <div class="nav-plus pull-right" id="btnAddDocument" data-toggle="tooltip" data-title="创建文档" data-direction="right"><i class="fa fa-plus" aria-hidden="true"></i></div>
                 <div class="clearfix"></div>
