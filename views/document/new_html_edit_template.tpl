@@ -195,7 +195,8 @@
 <div class="m-manual manual-editor">
     <div class="manual-head btn-toolbar" id="editormd-tools"  style="min-width: 1260px;" data-role="editor-toolbar" data-target="#editor">
         <div class="editor-group">
-            <a href="{{urlfor "BookController.Index"}}" data-toggle="tooltip" data-title="{{i18n .Lang "doc.backward"}}"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+            <!--a href="{{urlfor "BookController.Index"}}" data-toggle="tooltip" data-title="{{i18n .Lang "doc.backward"}}"><i class="fa fa-chevron-left" aria-hidden="true"></i></a-->
+            <a href="{{urlfor "DocumentController.Index" ":key" .Model.Identify}}" data-toggle="tooltip" data-title="{{i18n .Lang "doc.backward"}}"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
         </div>
         <div class="editor-group">
             <a href="javascript:;" id="markdown-save" data-toggle="tooltip" data-title="{{i18n .Lang "doc.save"}}" class="disabled save"><i class="fa fa-save first" aria-hidden="true" name="save"></i></a>
